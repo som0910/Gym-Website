@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            color: aliceblue;
+            background-size: 1500px 1000px;
+            background-image: url(workout.jpg);
+        }
+
+        .left {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            /* border: 2px solid wheat; */
+            display: inline-block;
+        }
+
+        .left img {
+            height: 70px;
+            width: 90px;
+        }
+
+        .left div p {
+            font-size: 14px;
+        }
+
+        .mid {
+            /* border: 2px solid wheat; */
+            width: 570px;
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            /* border: 2px solid wheat; */
+            display: inline-block;
+        }
+
+        .navBar {
+            margin-top: 32px;
+            /*using inspect*/
+        }
+
+        ul {
+            text-align: center;
+            padding: 0px;
+            /* using inspect*/
+        }
+
+        .navBar li {
+            display: inline-block;
+        }
+
+        .navBar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .navBar li a:hover {
+            color: rgb(241, 160, 160);
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 7px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(223, 92, 92);
+        }
+
+        .container {
+            border: 1px solid white;
+            width: 500px;
+            margin-top: 120px;
+            margin-left: 85px;
+            padding: 15px;
+            border-radius: 35px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            display: block;
+            /*to get them is separate lines*/
+            font-size: 17px;
+            width: 450px;
+            margin: 15px;
+            padding: 7px;
+            border: none;
+            /*using inspect*/
+            border-radius: 13px;
+        }
+
+        .container button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- for logo -->
+    <div class="left">
+        <img src="logo.jpg" alt="">
+        <div>
+            <p>FITNESS ZONE</p>
+        </div>
+    </div>
+
+    <!-- for navBar -->
+    <div class="mid">
+        <ul class="navBar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Workout Programs</a></li>
+            <li><a href="#">Fitness Challenges</a></li>
+            <li><a href="#">Recipes</a></li>
+        </ul>
+    </div>
+
+    <!-- for buttons -->
+    <div class="right">
+        <button class="btn">Create An Account</button>
+        <button class="btn">Contact Us</button>
+    </div>
+
+    <div class="container">
+        <h1>Join Kolkata's Best Gym</h1>
+        <form action="backend.php">
+            <input type="text" name="" placeholder="Enter your name">
+            <input type="email" name="" placeholder="Enter your email">
+            <input type="number" name="" placeholder="Enter your number">
+            <input type="text" name="" placeholder="Enter your address">
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
